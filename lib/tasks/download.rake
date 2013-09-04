@@ -57,6 +57,20 @@ task download: :environment do
       end
     end
   end
+
+  Rake::Task["remove_kosher"].invoke
+end
+
+task remove_kosher: :environment do
+  Product.find_each do |product|
+    doc = Nokogiri::HTML(product.description)
+    if img = (doc/'img[src*="YL_Kosher"]')[0]
+      if img.parent.text.strip == 'EarthKosher Certified'
+        img.parent.remove
+        product.update(description: (doc/'body').inner_html)
+      end
+    end
+  end
 end
 
 __END__
