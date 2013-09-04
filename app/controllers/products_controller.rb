@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   respond_to :json, :html
 
   def index
-    @products = Product.all.limit(20)
+    @products = Product.all.order(:id).limit(40)
     respond_with @products
   end
 

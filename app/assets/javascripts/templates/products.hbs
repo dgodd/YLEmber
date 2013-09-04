@@ -1,4 +1,4 @@
-{{#each product in controller}}
+{{#each product in filteredProducts}}
   <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center">
     {{view App.ProductInListView contentBinding="product"}}
   </div>

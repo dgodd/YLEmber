@@ -11,6 +11,11 @@
 </nav>
 
 <div class="container" id="main">
+  <div>
+    {{view App.SearchView placeholder="search"}}
+    {{#linkTo "products" classNames="btn btn-small"}}Search{{/linkTo}}
+  </div>
+
   <div class="row">
     {{outlet}}
   </div>
