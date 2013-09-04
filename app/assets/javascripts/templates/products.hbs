@@ -1,14 +1,17 @@
-<div class="col-md-3">
-  <div class="well sidebar-nav">
-    <ul class="nav nav-list">
-      <li class="nav-header">All Products</li>
-      {{#each product in controller}}
-        {{view App.ProductInListView contentBinding="product"}}
-      {{/each}}
-    </ul>
+{{#each product in controller}}
+  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center">
+    {{view App.ProductInListView contentBinding="product"}}
   </div>
-</div>
-<div class="col-md-9">
-  {{outlet}}
-</div>
-
+  {{#ifModulo 2}}
+    <div class="clearfix visible-xs"></div>
+  {{/ifModulo}}
+  {{#ifModulo 3}}
+    <div class="clearfix visible-sm"></div>
+  {{/ifModulo}}
+  {{#ifModulo 4}}
+    <div class="clearfix visible-md"></div>
+  {{/ifModulo}}
+  {{#ifModulo 6}}
+    <div class="clearfix visible-lg"></div>
+  {{/ifModulo}}
+{{/each}}

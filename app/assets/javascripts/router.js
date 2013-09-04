@@ -1,5 +1,4 @@
 App.Router.map(function() {
-  this.resource('products', function() {
-    this.resource('product', {path: ':product_id'});
-  });
+  this.resource('products');
+  this.resource('product', {path: 'products/:product_id'});
 });

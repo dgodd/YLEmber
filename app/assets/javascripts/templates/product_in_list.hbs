@@ -1,1 +1,4 @@
-{{#linkTo "product" product}}{{product.title}}{{/linkTo}}
+{{#linkTo "product" product}}
+  <div>{{product.title}}</div>
+  <img {{bindAttr src="product.image_url"}} class="img-responsive img-thumbnail" />
+{{/linkTo}}
