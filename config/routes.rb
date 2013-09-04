@@ -1,5 +1,5 @@
 EmberDataExample::Application.routes.draw do
-  resources :contacts
+  resources :products, only: [ :index, :show ]
+  resources :categories, only: [ :index, :show ]
   root :to => 'application#index'
-  match '/*path' => 'application#index', via: :get
 end

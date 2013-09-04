@@ -5,6 +5,7 @@ gem 'pg'
 gem 'sqlite3'
 
 gem 'sass-rails'
+gem 'coffee-rails'
 gem 'uglifier'
 gem 'anjlab-bootstrap-rails', '>= 2.1', :require => 'bootstrap-rails'
 
