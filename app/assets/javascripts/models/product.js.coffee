@@ -4,6 +4,7 @@ App.Product = DS.Model.extend
 
   title: DS.attr('string')
   code: DS.attr('string')
+  image_url: DS.attr('string')
   description: DS.attr('string')
   how_to_use: DS.attr('string')
   ingredients: DS.attr('string')

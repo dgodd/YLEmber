@@ -1,11 +1,11 @@
 <ol class="breadcrumb">
   <li><a href="#">{{category.name}}</a></li>
   <li><a href="#">{{sub_category.name}}</a></li>
-  <li class="active">Data</li>
+  <li class="active">{{title}}</li>
 </ol>
 
 <h1>{{title}}</h1>
-<img {{bindAttr src="gravatar"}} />
+<img {{bindAttr src="image_url"}} class="pull-right" />
 
 <div class="product-tag">
   {{#each tag in tags}}
