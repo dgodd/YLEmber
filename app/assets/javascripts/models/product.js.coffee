@@ -1,6 +1,6 @@
 App.Product = DS.Model.extend
-  # category: DS.belongsTo('App.Category')
-  # sub_category: DS.belongsTo('App.Category')
+  category: DS.belongsTo('App.Category')
+  sub_category: DS.belongsTo('App.Category')
 
   title: DS.attr('string')
   code: DS.attr('string')
@@ -10,4 +10,3 @@ App.Product = DS.Model.extend
   tags: DS.attr('array')
 
   # t.decimal  "price_us",        precision: 6, scale: 2
-  # t.string   "tags",                                    array: true
