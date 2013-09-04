@@ -1,17 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '4.0.0'
+gem 'pg'
 gem 'sqlite3'
-gem 'strong_parameters'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails'
-  gem 'uglifier'
-  gem 'anjlab-bootstrap-rails', '>= 2.1', :require => 'bootstrap-rails'
-  gem 'therubyracer', :platforms => :ruby
-end
+gem 'sass-rails'
+gem 'uglifier'
+gem 'anjlab-bootstrap-rails', '>= 2.1', :require => 'bootstrap-rails'
 
 gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 gem 'jquery-rails'
