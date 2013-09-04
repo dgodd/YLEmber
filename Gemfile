@@ -22,6 +22,9 @@ group :test, :development do
   gem 'capybara'
   gem 'konacha'
   gem 'poltergeist'
+
+  gem 'pry'
+  gem 'pry-nav'
 end
 
 group :test do
