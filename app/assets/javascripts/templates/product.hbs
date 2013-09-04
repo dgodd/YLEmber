@@ -1,23 +1,24 @@
 <h1>{{title}}</h1>
 <img {{bindAttr src="gravatar"}} />
 
-{{#each tag in tags}}
-  <div>{{tag}}</div>
-{{/each}}
+<div class="product-tag">
+  {{#each tag in tags}}
+    <span>{{tag}}</span>
+  {{/each}}
+</div>
 
-
-<div class="product-description">{{description}}</div>
+<div class="product-description">{{{description}}}</div>
 
 {{#if how_to_use}}
 <div class="product-how-to-use">
   <h4>How to Use</h4>
-  {{how_to_use}}
+  {{{how_to_use}}}
 </div>
 {{/if}}
 
 {{#if ingredients}}
 <div class="product-ingredients">
   <h4>Ingredients</h4>
-  {{ingredients}}
+  {{{ingredients}}}
 </div>
 {{/if}}

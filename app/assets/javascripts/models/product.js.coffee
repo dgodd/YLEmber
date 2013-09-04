@@ -7,6 +7,7 @@ App.Product = DS.Model.extend
   description: DS.attr('string')
   how_to_use: DS.attr('string')
   ingredients: DS.attr('string')
+  tags: DS.attr('array')
 
   # t.decimal  "price_us",        precision: 6, scale: 2
   # t.string   "tags",                                    array: true
